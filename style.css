@@ -1,0 +1,81 @@
+html {
+  height; 100%;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-image: url('sytantris-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: left center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-position: center center;
+  }
+}
+
+#logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+  #logo > img {
+    width: 100%;
+    height: auto;
+  }
+
+#icons {
+  display: inline-block;
+  vertical-align: 200%;
+}
+
+  #icons a img {
+    border-radius: 50%;
+    border: 2px solid #9fe558;
+    background-color: #9fe558;
+    transition: ease-in-out 0.4s;
+    width: 75px;
+    height: auto;
+    margin: 5px 20px;
+  }
+
+    #icons a img:hover {
+      transition: ease-in-out 0.4s;
+      border: 2px solid #379aff;
+      background-color: #379aff;
+    }
+
+@media screen and (max-width: 600px) {
+  #icons a img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+#youtube {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid #9fe558;
+  box-shadow: 0px 0px 10px 1px #9fe558;
+}
+
+@media screen and (max-width: 400px) {
+  #youtube {
+    right: -1px;
+  }
+}
